@@ -1,0 +1,17 @@
+# IDE
+.idea/
+*.iml
+
+# Build outputs
+target/
+out/
+
+# Temporary folders
+tmp_zip_extract/
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
