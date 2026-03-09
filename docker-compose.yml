@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root123
-      MYSQL_DATABASE: xettuyen
+      MYSQL_DATABASE: estateadvance
       MYSQL_USER: appuser
       MYSQL_PASSWORD: apppass
     ports:
@@ -33,7 +33,7 @@ services:
         condition: service_healthy
     environment:
       SPRING_PROFILES_ACTIVE: pro
-      DB_URL: jdbc:mysql://mysql:3307/xettuyen?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      DB_URL: jdbc:mysql://mysql:3306/estateadvance
       DB_USERNAME: appuser
       DB_PASSWORD: apppass
     ports:
